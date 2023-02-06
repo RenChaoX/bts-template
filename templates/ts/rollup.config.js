@@ -22,6 +22,9 @@ const files = fs.readdirSync(inputDir, {
   encoding: 'utf8'
 }) || []
 
+/**
+ * 动态拼接入口文件
+ */
 for (const file of files) {
   if(/\.spec\./.test(file)) continue
 

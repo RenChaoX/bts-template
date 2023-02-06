@@ -1,0 +1,43 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/",
+  "module": "./dist/",
+  "browser": "./dist/",
+  "scripts": {
+    "build": "npm run clear && rollup -c rollup.config.js",
+    "clear": "rimraf ./dist",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "ci": "jest --coverage ----coverageReporters=json"
+  },
+  "keywords": [],
+  "author": {
+    "name": "徐仁朝",
+    "email": "xrc11093@ly.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.11.19",
+    "fs-extra": "^11.1.0",
+    "jest": "^29.4.1",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.14.0",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
