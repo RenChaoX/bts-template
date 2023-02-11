@@ -32,7 +32,8 @@ const common = {
   banner,
   globals: {
     wx: "wx",
-    my: 'my'
+    my: 'my',
+    vue: 'Vue'
   },
   plugins: [
 
